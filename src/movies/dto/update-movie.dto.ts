@@ -3,11 +3,11 @@ import { IsNumber, IsString } from 'class-validator';
 
 export class CreateMovieDto {
   @IsString() // decorator
-  readonly title: string;
+  readonly title?: string;
 
   @IsNumber()
-  readonly year: number;
+  readonly year?: number;
 
   @IsString({ each: true })
-  readonly genres: string[];
+  readonly genres?: string[];
 }
