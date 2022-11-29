@@ -16,6 +16,10 @@ describe('MoviesService', () => {
   it('should be defined', () => {
     expect(service).toBeDefined();
   });
+
+  it('should be 4', () => {
+    expect(2 + 3).toEqual(5);
+  });
 });
 
 // 테스트하고 싶은 파일은 파일명에 .spec.ts를 붙이면 됌
